@@ -1,0 +1,7 @@
+
+<div class="content">
+<label>Enter the username   &nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" [(ngModel)]="username">
+<p>Entered user name is &nbsp; {{ username }}</p>
+<button [disabled]="username === ''" (click)="resetUsername()">Submit</button>
+</div>
+<app-calculator></app-calculator>

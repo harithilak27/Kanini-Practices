@@ -1,0 +1,54 @@
+.grid{
+    margin: 20px auto;
+    width: 1000px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    gap: 15px;
+
+}
+.doctor-detail{
+    background-color: rgba(240, 248, 255, 0.342);
+    border-radius: 10px;
+}
+.book{
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+.appointment-form{
+    position: absolute;
+    width: 600px;
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: left;
+    background-color: aliceblue;
+    color: black;
+}
+.close{
+    text-align: end;
+    cursor: pointer;
+}
+.submit{
+    background-color: black;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    .grid{
+        display: block;
+        width: 400px;
+    }
+    .appointment-form{
+        width: 400px;
+        margin: 0;
+        top: 80px;
+        left: 0;
+    }
+}

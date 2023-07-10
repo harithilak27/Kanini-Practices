@@ -1,0 +1,28 @@
+<h1>Question 1</h1>
+<form #temperatureCalc="ngForm" (ngSubmit)="onSubmit(temperatureCalc)" novalidate>
+  <div>
+    <label>temperature
+    <input type="number" name="temp" class="temp" value="" required minlength="4" pattern="^[0-9]+$"  placeholder="" #temp="ngModel"  [(ngModel)]="temperature.temp" />
+    </label>
+    <div *ngIf="!temp?.valid && (temp?.dirty || temp?.touched)">
+      <div *ngIf="temp.errors?.['required']">
+           temp is required
+      </div>
+      <div *ngIf="temp.errors?.['pattern']">
+            Only numbers are allowed
+      </div>
+    </div>
+    <br>
+    
+    <input type="radio" class="cel" name="options" value="celsius" #options="ngModel" [(ngModel)]="temperature.options" />
+    <label>celsius</label>
+    
+    <input type="radio" class="farh" name="options" value="Farhenheit" #options="ngModel" [(ngModel)]="temperature.options" />
+    <label>Farhenheit</label>
+    <br>
+
+    <button type="submit" [disabled]="temp.value == 0 || !temp.valid">submit</button>
+
+    <p>{{this.result}}</p>
+  </div>
+</form>

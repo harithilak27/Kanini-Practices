@@ -1,0 +1,36 @@
+.doctor {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin: 100px auto;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px 30px;
+    width: 150px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #a0aff157;
+    width: fit-content;
+  }
+  .delete{
+    margin-left: 36%;
+    background-color: rgba(240, 248, 255, 0.418);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .clear{
+    width: 150px;
+  }
+  @media only screen and (max-width: 600px){
+      td, th {
+        width: 100px;
+      }
+      tr:nth-child(even) {
+        width: fit-content;
+      }
+    }

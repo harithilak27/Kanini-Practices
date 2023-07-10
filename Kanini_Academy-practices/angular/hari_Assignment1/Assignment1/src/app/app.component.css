@@ -1,0 +1,10 @@
+*{
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+    padding: 2px 0;
+}
+body{
+    margin: 0 auto;
+    width: 600px;
+    line-height: 1.5;
+}

@@ -1,0 +1,29 @@
+<div class="body">
+<app-solutions></app-solutions>
+
+<div class="inner">
+    <h1>Question 2</h1>
+    <div >
+      <div >
+        <label for="url" 
+          >Input URL <span style="color:red">*</span>
+          <input
+            type="text"
+            placeholder="Enter url here"
+            #url="ngModel"
+            [(ngModel)]="UrlShotener.url"
+            required
+
+          />
+        </label>
+      </div>
+  
+      <div >
+        <button type="button" (click)="onSubmit()" [disabled]="!url?.valid">shortened URL</button>
+      </div>
+      <a [href]="shortenedUrl" target="_blank">{{shortenedUrl}}</a>
+    </div>
+  </div>
+
+<app-solution3></app-solution3>
+</div>

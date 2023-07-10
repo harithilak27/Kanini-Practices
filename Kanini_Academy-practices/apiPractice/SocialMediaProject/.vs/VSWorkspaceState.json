@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SocialMediaProject",
+    "\\SocialMediaProject\\Controllers",
+    "\\SocialMediaProject\\Repository",
+    "\\SocialMediaProject\\Repository\\PostService"
+  ],
+  "SelectedNode": "\\SocialMediaProject\\Repository\\PostService\\PostService.cs",
+  "PreviewInSolutionExplorer": false
+}
